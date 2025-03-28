@@ -1,7 +1,9 @@
 export const personalInfo = {
   name: "Grupo H",
   location: "Peru, modalidad virtual",
-  github: "https://github.com/KennyXen/KennyXen.github.io",
+  email: "henryvaldezv@gmail.com",
+  github: "https://github.com/KennyXen",
+  linkedin: "https://www.linkedin.com/in/henry-valdez-vega-540895282/",
 };
 
 export const workExperience = [
