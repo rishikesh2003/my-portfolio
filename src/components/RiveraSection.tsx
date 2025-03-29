@@ -1,62 +1,69 @@
-import React from "react";
-import { awards } from "@/lib/data";
-import { Trophy } from "lucide-react";
-import MotionWrapper from "./MotionWrapper";
-import { GlassCard } from "./ui/glass-card";
+import { informacionYProyectos } from "@/lib/data";
+import TimelineItem from "./TimelineItem";
+import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import MotionWrapper from "./MotionWrapper";
 
-export default function AwardsSection() {
+export default function ExperienceSection() {
   return (
     <section
-      id="awards"
-      className="py-12 bg-gradient-to-b from-background to-muted/10"
+      id="experience"
+      className="py-12 bg-gradient-to-b from-muted/20 to-background"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🏆 Awards
+          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
+            <motion.span
+              className="inline-block mr-2"
+              initial={{ rotate: 0 }}
+              whileInView={{ rotate: [0, -10, 10, -5, 5, 0] }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              💼
+            </motion.span>{" "}
+            Jorcaef Rivera Cusihuaman
           </h2>
         </MotionWrapper>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {awards.map((award, index) => (
-            <MotionWrapper key={award.name + award.date} delay={index * 0.1}>
-              <GlassCard className="p-4 dark:border-purple-500/10 hover:border-purple-500/30 transition-all duration-300 flex flex-col h-full">
-                <div className="flex items-center mb-2">
-                  <motion.div
-                    whileHover={{ rotate: 20 }}
-                    transition={{ type: "spring", stiffness: 500 }}
-                    className="flex items-center justify-center bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full p-1.5 mr-2"
-                  >
-                    <Trophy className="h-4 w-4 text-white" />
-                  </motion.div>
-                  <h3 className="font-medium">{award.name}</h3>
-                </div>
-                <p className="text-xs text-muted-foreground mb-1 pl-8">
-                  🏢 {award.issuer}
-                </p>
-                <div className="flex flex-col space-y-2 mt-auto">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-muted-foreground bg-background/50 px-2 py-1 rounded-md">
-                      📅 {award.date}
-                    </span>
-                    <motion.span
-                      className="text-xs px-2 py-1 bg-purple-500/10 rounded-full"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {award.position}
-                    </motion.span>
+        <div className="mb-8">
+          {informacionYProyectos.map((job, index) => (
+            <TimelineItem
+              key={job.company + job.period}
+              title={`👨‍💻 ${job.position} | ${job.company}`}
+              subtitle={`🌍 ${job.location}`}
+              date={`📅 ${job.period}`}
+              isLast={index === informacionYProyectos.length - 1}
+              index={index}
+            >
+              <motion.div
+                className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="flex items-center mb-3">
+                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
+                    <Briefcase className="h-4 w-4 text-purple-500" />
                   </div>
-                  <motion.span
-                    className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    {award.type === "International" ? "🌎 " : "🇮🇳 "}
-                    {award.type}
-                  </motion.span>
+                  <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>
-              </GlassCard>
-            </MotionWrapper>
+                <ul className="list-none ml-4 space-y-2 text-sm">
+                  {job.achievements.map((achievement, i) => (
+                    <motion.li
+                      key={i}
+                      className="text-muted-foreground relative pl-6"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: 0.1 * i }}
+                      viewport={{ once: true }}
+                    >
+                      {achievement}
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
+            </TimelineItem>
           ))}
         </div>
       </div>
