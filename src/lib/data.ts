@@ -30,6 +30,7 @@ export const informacionYProyectosMontenegro = [
     location: "Remote",
     position: "Software Engineer",
     period: "Mar 2024 - Present",
+    github: "https://github.com/KennyXen",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
       "Built a comprehensive admin panel for managing content, user data, and analytics.",
