@@ -20,7 +20,7 @@ export default function ExperienceSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              💼
+              🎓
             </motion.span>{" "}
             Eladio Zerpa Ortega
           </h2>
