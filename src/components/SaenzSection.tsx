@@ -22,7 +22,7 @@ export default function ExperienceSection() {
             >
               💼
             </motion.span>{" "}
-            Eliseo Montenegro Rivera
+            James Saenz Castro
           </h2>
         </MotionWrapper>
         <div className="mb-8">
