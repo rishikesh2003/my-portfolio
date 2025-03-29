@@ -17,7 +17,6 @@ export const informacionYProyectosValdez = [
       "Estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental,",
       "en transición desde la enseñanza de matemáticas hacia la ingeniería.",
       "Me apasionan la ciencia de datos y la inteligencia artificial, especialmente sus aplicaciones en la educación.",
-      "Reduced database costs by introducing materialized views, optimizing query performance and resource usage.",
       "🔹 Siempre explorando nuevas tecnologías y aprendiendo cada día.",
       "🔹 Interesado en proyectos que combinen educación y tecnología.",
     ],

@@ -62,8 +62,21 @@ export default function ExperienceSection() {
                     </motion.li>
                   ))}
                 </ul>
+                {job.github && (
+                  <motion.a
+                    href={job.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 flex items-center justify-center text-lg font-bold text-blue-500 hover:text-blue-700 transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <Github className="h-6 w-6 mr-2" />
+                    🌟 Ver perfil en GitHub
+                  </motion.a>
+                )}
               </motion.div>
             </TimelineItem>
+            
           ))}
         </div>
       </div>
