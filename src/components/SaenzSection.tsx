@@ -1,67 +1,69 @@
-import React from "react";
-import { projects } from "@/lib/data";
-import {
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { Github } from "lucide-react";
-import { GlassCard } from "./ui/glass-card";
-import MotionWrapper from "./MotionWrapper";
+import { informacionYProyectos } from "@/lib/data";
+import TimelineItem from "./TimelineItem";
+import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import MotionWrapper from "./MotionWrapper";
 
-export default function ProjectsSection() {
+export default function ExperienceSection() {
   return (
-    <section id="projects" className="py-12 relative">
+    <section
+      id="experience"
+      className="py-12 bg-gradient-to-b from-muted/20 to-background"
+    >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
-          <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🚀 Projects
+          <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
+            <motion.span
+              className="inline-block mr-2"
+              initial={{ rotate: 0 }}
+              whileInView={{ rotate: [0, -10, 10, -5, 5, 0] }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              💼
+            </motion.span>{" "}
+            Eliseo Montenegro Rivera
           </h2>
         </MotionWrapper>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
-            <MotionWrapper key={project.title} delay={index * 0.2}>
-              <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
-                <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <CardTitle className="text-center md:text-left group-hover:text-purple-500 transition-colors duration-300">
-                    {project.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="list-disc ml-4 space-y-1 text-sm group-hover:space-y-2 transition-all duration-300">
-                    {project.description.map((desc, i) => (
-                      <motion.li
-                        key={i}
-                        className="text-muted-foreground"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.1 }}
-                        viewport={{ once: true }}
-                      >
-                        {desc}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    View on GitHub 🔗
-                  </motion.a>
-                </CardFooter>
-              </GlassCard>
-            </MotionWrapper>
+        <div className="mb-8">
+          {informacionYProyectos.map((job, index) => (
+            <TimelineItem
+              key={job.company + job.period}
+              title={`👨‍💻 ${job.position} | ${job.company}`}
+              subtitle={`🌍 ${job.location}`}
+              date={`📅 ${job.period}`}
+              isLast={index === informacionYProyectos.length - 1}
+              index={index}
+            >
+              <motion.div
+                className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="flex items-center mb-3">
+                  <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
+                    <Briefcase className="h-4 w-4 text-purple-500" />
+                  </div>
+                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                </div>
+                <ul className="list-none ml-4 space-y-2 text-sm">
+                  {job.achievements.map((achievement, i) => (
+                    <motion.li
+                      key={i}
+                      className="text-muted-foreground relative pl-6"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: 0.1 * i }}
+                      viewport={{ once: true }}
+                    >
+                      {achievement}
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
+            </TimelineItem>
           ))}
         </div>
       </div>
