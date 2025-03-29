@@ -3,6 +3,7 @@ import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { FaGithub } from "react-icons/fa";
 
 export default function ExperienceSection() {
   return (
@@ -70,7 +71,7 @@ export default function ExperienceSection() {
                     className="mt-4 flex items-center justify-center text-lg font-bold text-blue-500 hover:text-blue-700 transition-colors"
                     whileHover={{ scale: 1.1 }}
                   >
-                    <Github className="h-6 w-6 mr-2" />
+                    <FaGithub className="h-6 w-6 mr-2" />
                     🌟 Ver perfil en GitHub
                   </motion.a>
                 )}
