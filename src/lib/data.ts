@@ -6,7 +6,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/henry-valdez-vega-540895282/",
 };
 
-export const workExperience = [
+export const informacionYProyectos = [
   {
     company: "Chatbyte GmbH",
     location: "Remote",

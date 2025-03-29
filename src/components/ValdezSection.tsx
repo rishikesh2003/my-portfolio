@@ -1,4 +1,4 @@
-import { workExperience } from "@/lib/data";
+import { informacionYProyectos } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
@@ -22,17 +22,17 @@ export default function ExperienceSection() {
             >
               💼
             </motion.span>{" "}
-            Work Experience
+            Henry Valdez Vega
           </h2>
         </MotionWrapper>
         <div className="mb-8">
-          {workExperience.map((job, index) => (
+          {informacionYProyectos.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
               title={`👨‍💻 ${job.position} | ${job.company}`}
               subtitle={`🌍 ${job.location}`}
               date={`📅 ${job.period}`}
-              isLast={index === workExperience.length - 1}
+              isLast={index === informacionYProyectos.length - 1}
               index={index}
             >
               <motion.div
