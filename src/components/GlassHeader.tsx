@@ -23,7 +23,7 @@ export default function GlassHeader() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {["Henry Valdez", "Eliseo Montenegro", "James Saenz", "Jorcaef Rivera", "Eladio Zerpa"].map(
+          {["Valdez", "Montenegro", "Saenz", "Rivera", "Zerpa"].map(
             (item, index) => (
               <motion.a
                 key={item}
@@ -34,11 +34,11 @@ export default function GlassHeader() {
                 transition={{ duration: 0.2, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                {item === "Henry Valdez" && "💼 "}
-                {item === "Eliseo Montenegro" && "🛠️ "}
-                {item === "James Saenz" && "🚀 "}
-                {item === "Jorcaef Rivera" && "🏆 "}
-                {item === "Eladio Zerpa" && "🎓 "}
+                {item === "Valdez" && "💼 "}
+                {item === "Montenegro" && "🛠️ "}
+                {item === "Saenz" && "🚀 "}
+                {item === "Rivera" && "🏆 "}
+                {item === "Zerpa" && "🎓 "}
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </motion.a>
             )
@@ -71,7 +71,7 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "skills", "projects", "awards", "education"].map(
+              {["Valdez", "Montenegro", "Saenz", "Rivera", "Zerpa"].map(
                 (item, index) => (
                   <motion.a
                     key={item}
@@ -82,11 +82,11 @@ export default function GlassHeader() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "experience" && "💼 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "projects" && "🚀 "}
-                    {item === "awards" && "🏆 "}
-                    {item === "education" && "🎓 "}
+                    {item === "Valdez" && "💼 "}
+                    {item === "Montenegro" && "🛠️ "}
+                    {item === "Saenz" && "🚀 "}
+                    {item === "Rivera" && "🏆 "}
+                    {item === "Zerpa" && "🎓 "}
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </motion.a>
                 )
