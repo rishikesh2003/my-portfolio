@@ -74,6 +74,7 @@ export default function ExperienceSection() {
                     <FaGithub className="h-6 w-6 mr-2" />
                     🌟 Ver perfil en GitHub
                   </motion.a>
+                  )}
               </motion.div>
             </TimelineItem>
           ))}
