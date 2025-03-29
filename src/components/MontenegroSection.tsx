@@ -1,4 +1,4 @@
-import { informacionYProyectos } from "@/lib/data";
+import { informacionYProyectosMontenegro } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
@@ -26,13 +26,13 @@ export default function ExperienceSection() {
           </h2>
         </MotionWrapper>
         <div className="mb-8">
-          {informacionYProyectos.map((job, index) => (
+          {informacionYProyectosMontenegro.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
               title={`👨‍💻 ${job.position} | ${job.company}`}
               subtitle={`🌍 ${job.location}`}
               date={`📅 ${job.period}`}
-              isLast={index === informacionYProyectos.length - 1}
+              isLast={index === informacionYProyectosMontenegro.length - 1}
               index={index}
             >
               <motion.div
