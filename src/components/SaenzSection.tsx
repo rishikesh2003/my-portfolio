@@ -3,6 +3,7 @@ import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { FaGithub } from "react-icons/fa";
 
 export default function ExperienceSection() {
   return (
@@ -46,7 +47,7 @@ export default function ExperienceSection() {
                   <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
                     <Briefcase className="h-4 w-4 text-purple-500" />
                   </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                  <h4 className="text-sm font-medium">Presentación</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
@@ -62,6 +63,18 @@ export default function ExperienceSection() {
                     </motion.li>
                   ))}
                 </ul>
+                {job.github && (
+                  <motion.a
+                    href={job.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 flex items-center justify-center text-lg font-bold text-blue-500 hover:text-blue-700 transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <FaGithub className="h-6 w-6 mr-2" />
+                    🌟 Ver perfil en GitHub
+                  </motion.a>
+                  )}
               </motion.div>
             </TimelineItem>
           ))}
