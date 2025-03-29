@@ -26,10 +26,10 @@ export const informacionYProyectosValdez = [
 
 export const informacionYProyectosMontenegro = [
   {
-    company: "Chatbyte GmbH",
-    location: "Remote",
-    position: "Software Engineer",
-    period: "Mar 2024 - Present",
+    company: "Universidad Continental",
+    location: "Perú",
+    position: "Ingeniería de Sistemas e Informática",
+    period: "desde - Presente",
     github: "https://github.com/KennyXen",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
@@ -46,10 +46,10 @@ export const informacionYProyectosMontenegro = [
 
 export const informacionYProyectosSaenz = [
   {
-    company: "Chatbyte GmbH",
-    location: "Remote",
-    position: "Software Engineer",
-    period: "Mar 2024 - Present",
+    company: "Universidad Continental",
+    location: "Perú",
+    position: "Ingeniería de Sistemas e Informática",
+    period: "desde - Presente",
     github: "https://github.com/KennyXen",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
@@ -66,10 +66,10 @@ export const informacionYProyectosSaenz = [
 
 export const informacionYProyectosRivera = [
   {
-    company: "Chatbyte GmbH",
-    location: "Remote",
-    position: "Software Engineer",
-    period: "Mar 2024 - Present",
+    company: "Universidad Continental",
+    location: "Perú",
+    position: "Ingeniería de Sistemas e Informática",
+    period: "desde - Presente",
     github: "https://github.com/KennyXen",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
@@ -86,10 +86,10 @@ export const informacionYProyectosRivera = [
 
 export const informacionYProyectosZerpa = [
   {
-    company: "Chatbyte GmbH",
-    location: "Remote",
-    position: "Software Engineer",
-    period: "Mar 2024 - Present",
+    company: "Universidad Continental",
+    location: "Perú",
+    position: "Ingeniería de Sistemas e Informática",
+    period: "desde - Presente",
     github: "https://github.com/KennyXen",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
