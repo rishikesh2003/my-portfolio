@@ -29,7 +29,7 @@ export const informacionYProyectosMontenegro = [
     company: "Universidad Continental",
     location: "Perú",
     position: "Ingeniería de Sistemas e Informática",
-    period: "desde - Presente",
+    period: "2023 - Presente",
     github: "https://github.com/EliseoMontenegro",
     achievements: [
       "Soy estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental, apasionado por la tecnología. Mi interés se centra en el diseño de software, el desarrollo de aplicaciones móviles y la creación de páginas web, siempre buscando fusionar funcionalidad e innovación en cada proyecto.",
