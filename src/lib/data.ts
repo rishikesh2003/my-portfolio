@@ -32,10 +32,11 @@ export const informacionYProyectosMontenegro = [
     period: "desde - Presente",
     github: "https://github.com/EliseoMontenegro",
     achievements: [
-      "Soy estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental.",
-      "🔹 Apasionado por la ciencia de datos y la inteligencia artificial, con un enfoque en su impacto en la educación.",
-      "🚀 Siempre explorando nuevas tecnologías y adquiriendo nuevos conocimientos.",
-      "💡 Interesado en proyectos innovadores que combinen educación y tecnología.",
+      "Soy estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental, apasionado por la tecnología. Mi interés se centra en el diseño de software, el desarrollo de aplicaciones móviles y la creación de páginas web, siempre buscando fusionar funcionalidad e innovación en cada proyecto.",
+
+      "💻 Me encanta diseñar y desarrollar software que ofrezca soluciones eficientes.",
+      "📱 Apasionado por el desarrollo de apps móviles con experiencias intuitivas.",
+      "🌐 Interesado en la creación de páginas web atractivas y funcionales."
     ],
   },
   
