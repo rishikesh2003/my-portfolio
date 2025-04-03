@@ -27,7 +27,7 @@ export const informacionYProyectosValdez = [
 export const informacionYProyectosMontenegro = [
   {
     company: "Universidad Continental",
-    location: "Perú",
+    location: "Lima - Perú",
     position: "Ingeniería de Sistemas e Informática",
     period: "2023 - Presente",
     github: "https://github.com/EliseoMontenegro",
