@@ -47,7 +47,7 @@ export const informacionYProyectosSaenz = [
     location: "Perú",
     position: "Ingeniería de Sistemas e Informática",
     period: "desde - Presente",
-    github: "https://github.com/KennyXen",
+    github: "https://jamesssc.github.io/Entregable1/",
     achievements: [
       "Designed and implemented business logic for AWS Lambdas using the Serverless Framework, forming the backbone of the application's functionality and ensuring seamless backend operations.",
       "Built a comprehensive admin panel for managing content, user data, and analytics.",
