@@ -9,18 +9,37 @@ import RiveraSection from "@/components/RiveraSection";
 import ZerpaSection from "@/components/ZerpaSection";
 import Footer from "@/components/Footer";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import ErrorBoundary from "@/components/ui/ErrorBoundary"; // Importa el ErrorBoundary
 ---
 
 <Layout>
-  <GlassHeader client:only="react" />
-  <ParticlesBackground client:only="react" />
+  <ErrorBoundary>
+    <GlassHeader client:only="react" />
+  </ErrorBoundary>
+  <ErrorBoundary>
+    <ParticlesBackground client:only="react" />
+  </ErrorBoundary>
   <main class="min-h-screen">
-    <HeroSection client:only="react" />
-    <ValdezSection client:only="react" />
-    <MontenegroSection client:only="react" />
-    <SaenzSection client:only="react" />
-    <RiveraSection client:only="react" />
-    <ZerpaSection client:only="react" />
+    <ErrorBoundary>
+      <HeroSection client:only="react" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <ValdezSection client:only="react" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <MontenegroSection client:only="react" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <SaenzSection client:only="react" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <RiveraSection client:only="react" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <ZerpaSection client:only="react" />
+    </ErrorBoundary>
   </main>
-  <Footer client:only="react" />
+  <ErrorBoundary>
+    <Footer client:only="react" />
+  </ErrorBoundary>
 </Layout>
