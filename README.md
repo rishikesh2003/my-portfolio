@@ -1,41 +1,41 @@
-# Modern Portfolio Template
+# Plantilla de Portafolios Grupal Moderno
 
-A sleek, responsive portfolio website built with Astro, React, and Tailwind CSS, featuring modern animations and glassmorphism effects.
+Un sitio web de portafolios elegante y responsivo, construido con Astro, React y Tailwind CSS, que incluye animaciones modernas y efectos de glassmorphism.
 
 ![Portfolio Screenshot](https://github.com/user-attachments/assets/4f2466f1-1ebe-4cbe-857c-40eccd63c384)
 
-## Features
+## Características
 
-- ✨ **Modern Design**: Clean, professional layout with glassmorphism effects
-- 🎨 **Animations**: Smooth transitions and interactive elements using Framer Motion
-- 🌙 **Dark/Light Mode**: Seamless theme switching with system preference detection
-- 📱 **Fully Responsive**: Optimized for all devices and screen sizes
-- 🚀 **Performance Focused**: Built with Astro for excellent loading speeds
-- 🧩 **Modular Structure**: Easy to customize and extend
-- 🌈 **Particles Background**: Subtle interactive particle effects
-- 🔍 **SEO Friendly**: Structured content for better search engine visibility
+- ✨ **Diseño Moderno**: Diseño limpio y profesional con efectos de glassmorphism
+- 🎨 **Animaciones**: Transiciones suaves y elementos interactivos utilizando Framer Motion
+- 🌙 **Modo Oscuro/Claro**: Cambio de tema fluido con detección de preferencia del sistema
+- 📱 **Totalmente Responsivo**: Optimizado para todos los dispositivos y tamaños de pantalla
+- 🚀 **Enfocado en el Rendimiento**: Construido con Astro para una excelente velocidad de carga
+- 🧩 **Estructura Modular**: Fácil de personalizar y extender
+- 🌈 **Fondo con Partículas**: Efectos sutiles de partículas interactivas
+- 🔍 **Amigable con SEO**: Contenido estructurado para mejor visibilidad en buscadores
 
 ## Demo
 
 [Live Demo](https://rishilol.vercel.app/)
 
-## Getting Started
+## Empezando
 
-### Prerequisites
+### Prerequisitos
 
 - Node.js (v18 or higher recommended)
 - npm or yarn or bun
 
-### Installation
+### Instalación
 
-1. Clone the repository:
+1. Clonar el repositorio:
 
    ```bash
    git clone https://github.com/yourusername/my-portfolio.git
    cd my-portfolio
    ```
 
-2. Install dependencies:
+2. Instalar dependencias:
 
    ```bash
    npm install
@@ -45,7 +45,7 @@ A sleek, responsive portfolio website built with Astro, React, and Tailwind CSS,
    bun install
    ```
 
-3. Start the development server:
+3. Iniciar el servidor de desarrollo:
 
    ```bash
    npm run dev
@@ -55,116 +55,58 @@ A sleek, responsive portfolio website built with Astro, React, and Tailwind CSS,
    bun dev
    ```
 
-4. Open your browser and visit `http://localhost:4321`
+4. Abra su navegador y visite `http://localhost:4321`
 
-## Customizing the Portfolio
+## Personalización de los portafolios
 
-This portfolio is designed to be easily customizable mainly by editing the data in the `src/lib/data.ts` file:
+Este proyecto está diseñado para ser fácilmente personalizable principalmente mediante la edición de los datos en el archivo `src/lib/data.ts`:
 
-1. **Personal Information**: Update your name, location, email, and social links
+1. **Información Personal**: Actualiza tu nombre, ubicación, correo electrónico y links a redes sociales.
 
    ```typescript
    export const personalInfo = {
-     name: "Your Name",
-     location: "Your Location",
-     email: "your.email@example.com",
-     github: "https://github.com/yourusername",
-     linkedin: "https://www.linkedin.com/in/yourusername/",
+     name: "Tu Nombre",
+     location: "Tu Ubicación",
+     email: "tu.email@ejemplo.com",
+     github: "https://github.com/tunombredeusuario",
+     linkedin: "https://www.linkedin.com/in/tunombredeusuario/",
    };
    ```
 
-2. **Work Experience**: Add or modify your professional experience
+2. **Espacio del Usuario**: Añadir o modificar su información a mostrar. En lugar de 'usuario', buscar su apellido. En el campo 'company:' poner el nombre de la universidad. En el campo 'position:' poner la carrera que sigue. En 'period:' poner la fecha de ingreso y fecha de fin de la carrera (en caso de no precisar poner 'a la fecha'). En 'github:' poner el link a github del usuario. En 'achievements:' poner la descripción personal.
 
    ```typescript
-   export const workExperience = [
+   export const informacionYProyectosUsuario = [
      {
-       company: "Company Name",
-       location: "Location",
-       position: "Your Position",
+       company: "Universidad Continental",
+       location: "Ubicación",
+       position: "Ingeniería de Sistemas e Informática",
        period: "Start Date - End Date",
+       github: "https://github.com/tunombredeusuario",
        achievements: [
          "Achievement 1",
          "Achievement 2",
          // ...
        ],
      },
-     // Add more work experiences
+     
    ];
    ```
+  
 
-3. **Education**: Update your educational background
+## Compilando para producción
 
-   ```typescript
-   export const education = [
-     {
-       institution: "University Name",
-       location: "Location",
-       degree: "Your Degree",
-       period: "Start Date - End Date",
-       achievements: [
-         "Achievement 1",
-         "Achievement 2",
-         // ...
-       ],
-     },
-     // Add more education entries
-   ];
-   ```
-
-4. **Skills**: Customize your skills by category
-
-   ```typescript
-   export const skills = {
-     programmingLanguages: ["Skill 1", "Skill 2"],
-     frontendDevelopment: ["Skill 1", "Skill 2"],
-     // Other skill categories
-   };
-   ```
-
-5. **Projects**: Showcase your projects
-
-   ```typescript
-   export const projects = [
-     {
-       title: "Project Name",
-       github: "https://github.com/yourusername/project",
-       description: [
-         "Description point 1",
-         "Description point 2",
-         // ...
-       ],
-     },
-     // Add more projects
-   ];
-   ```
-
-6. **Awards**: Highlight your achievements
-   ```typescript
-   export const awards = [
-     {
-       name: "Award Name",
-       issuer: "Issuer",
-       date: "Date",
-       type: "Type",
-       position: "Position",
-     },
-     // Add more awards
-   ];
-   ```
-
-## Building for Production
-
-To create a production build:
+Para crear una compilación de producción:
 
 ```bash
 npm run build
-# or
+# o
 yarn build
-# or
+# o
 bun run build
 ```
 
-To preview the production build locally:
+Para obtener una vista previa de la compilación de producción localmente:
 
 ```bash
 npm run preview
@@ -172,21 +114,21 @@ npm run preview
 yarn preview
 ```
 
-## Deployment
+## Despliegue
 
-This portfolio can be deployed to any static site hosting service like Vercel, Netlify, GitHub Pages, etc.
+Este proyecto se puede implementar en cualquier servicio de alojamiento de sitios estáticos como Vercel, Netlify, GitHub Pages, etc.
 
-## License
+## Licencia 
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este proyecto está licenciado bajo la licencia MIT License - consulte el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Copyright
 
 © 2025 Rishikesh S. All rights reserved.
 
-This template is designed to be used as a starting point for your personal portfolio. You are free to use it for your own portfolio by simply modifying the `data.ts` file and making any design adjustments. However, please include attribution to the original author when using this template.
+Esta plantilla está diseñada para servir como punto de partida para su portafolio grupal. Puede usarla libremente para su propio portafolio simplemente modificando el archivo `data.ts` y haciendo los ajustes de diseño necesarios. Sin embargo, le rogamos que incluya la atribución al autor original al usar esta plantilla.
 
-## Acknowledgments
+## Reconocimientos
 
 - [Astro](https://astro.build/)
 - [React](https://reactjs.org/)
