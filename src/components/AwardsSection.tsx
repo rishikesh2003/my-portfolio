@@ -8,13 +8,13 @@ import { motion } from "framer-motion";
 export default function AwardsSection() {
   return (
     <section
-      id="awards"
+      id="prix"
       className="py-12 bg-gradient-to-b from-background to-muted/10"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🏆 Awards
+            🏆 Récompenses / Prix
           </h2>
         </MotionWrapper>
 

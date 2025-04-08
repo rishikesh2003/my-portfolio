@@ -7,7 +7,7 @@ import MotionWrapper from "./MotionWrapper";
 export default function ExperienceSection() {
   return (
     <section
-      id="experience"
+      id="expérience"
       className="py-12 bg-gradient-to-b from-muted/20 to-background"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -22,7 +22,7 @@ export default function ExperienceSection() {
             >
               💼
             </motion.span>{" "}
-            Work Experience
+            Expérience de travail
           </h2>
         </MotionWrapper>
         <div className="mb-8">
@@ -46,7 +46,7 @@ export default function ExperienceSection() {
                   <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
                     <Briefcase className="h-4 w-4 text-purple-500" />
                   </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                  <h4 className="text-sm font-medium">Mes réalisations</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
