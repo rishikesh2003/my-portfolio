@@ -85,7 +85,7 @@ export default function ExperienceSection() {
                     whileHover={{ scale: 1.1 }}
                   >
                     <FaLink className="h-6 w-6 mr-2" />
-                    📝 Visitar blog personal
+                    📝 Visita mi blog personal
                   </motion.a>
                 )}
               </motion.div>
