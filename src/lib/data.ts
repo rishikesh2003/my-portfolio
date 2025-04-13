@@ -13,6 +13,7 @@ export const informacionYProyectosValdez = [
     position: "Ingeniería de Sistemas e Informática",
     period: "2021 - Presente",
     github: "https://github.com/KennyXen",
+    blog: "https://kennyblog.example.com",
     achievements: [
       "Estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental,",
       "en transición desde la enseñanza de matemáticas hacia la ingeniería.",
