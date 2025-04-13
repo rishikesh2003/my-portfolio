@@ -3,6 +3,7 @@ import { Mail, Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
+
 export default function HeroSection() {
   const containerVariants = {
     hidden: { opacity: 0 },
