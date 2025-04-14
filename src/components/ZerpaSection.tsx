@@ -4,6 +4,7 @@ import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 
 export default function ExperienceSection() {
   return (
@@ -73,6 +74,18 @@ export default function ExperienceSection() {
                   >
                     <FaGithub className="h-6 w-6 mr-2" />
                     🌟 Ver perfil en GitHub
+                  </motion.a>
+                  )}
+                {job.blog && (
+                  <motion.a
+                    href={job.blog}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 flex items-center justify-center text-lg font-bold text-purple-500 hover:text-purple-700 transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <FaLink className="h-6 w-6 mr-2" />
+                    📝 Visita mi blog personal
                   </motion.a>
                   )}
               </motion.div>
