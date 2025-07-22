@@ -37,6 +37,7 @@ export const workExperience: WorkExperience[] = [
     location: "Coimbatore, India",
     position: "Software Engineer",
     period: "Mar 2023 - Mar 2024",
+    summary: "Lorem impusulum",
     achievements: [
       "Developed responsive frontend components using React.js, enhancing user experience and app performance.",
       "Optimized JavaScript solutions to improve load times and data-fetching efficiency.",
@@ -47,6 +48,7 @@ export const workExperience: WorkExperience[] = [
     location: "Coimbatore, India",
     position: "Software Engineering Intern",
     period: "Jan 2023 - Mar 2023",
+    summary: "Lorem impusulum",
     achievements: [
       "Built interactive UIs with React.js, focusing on reusable components and performance optimization.",
       "Implemented JavaScript-based features like user authentication and real-time updates.",
