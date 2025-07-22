@@ -6,7 +6,17 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/rishikeshs/",
 };
 
-export const workExperience = [
+export interface WorkExperience {
+  company: string;
+  location: string;
+  position: string;
+  period: string;
+  summary?: string;
+  achievements: string[];
+  tools?: string[];
+}
+
+export const workExperience: WorkExperience[] = [
   {
     company: "Chatbyte GmbH",
     location: "Remote",
