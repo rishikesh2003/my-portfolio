@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Brand tokens (Tailwind v4 @theme) */
+@theme {
+  /* Blues block from the palette */
+  --color-blue-50:  #D0D7F2;
+  --color-blue-100: #9DAFE6;
+  --color-blue-200: #6888D9;
+  --color-blue-300: #4464AD; /* Primary blue option */
+  --color-blue-400: #2C4376;
+  --color-blue-500: #162444;
+  --color-blue-600: #081024;
+
+  /* Purples block (secondary) */
+  --color-purple-50:  #EDECF8;
+  --color-purple-100: #C5C0E8;
+  --color-purple-200: #A096D9;
+  --color-purple-300: #7B6CC7;
+  --color-purple-400: #5944AD; /* Secondary main */
+  --color-purple-500: #372970;
+  --color-purple-600: #191138;
+
+  /* Teal/Aqua block (highlight) */
+  --color-aqua-50:  #A6E4F8;
+  --color-aqua-100: #58C1DB;
+  --color-aqua-200: #4498AD; /* Accent / link color */
+  --color-aqua-300: #317181;
+  --color-aqua-400: #1F4D58;
+  --color-aqua-500: #0E2B32;
+  --color-aqua-600: #041317;
+
+  /* Neutrals */
+  --color-neutral-50:  #D7D7D9;
+  --color-neutral-100: #AFB0B4;
+  --color-neutral-200: #898A90;
+  --color-neutral-300: #65666C;
+  --color-neutral-400: #434448;
+  --color-neutral-500: #252528;
+  --color-neutral-600: #111112;
+}
