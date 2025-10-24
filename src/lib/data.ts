@@ -1,95 +1,85 @@
 export const personalInfo = {
-  name: "Lorem Ipsum",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
+  name: "OUEDRAOGO Najibe Jean Jacques",
+  location: "Saint Cyr l'Ecole 78210",
+  email: "najibe252@gmail.com",
+  linkedin: "www.linkedin.com/in/ouedraogo-najibe-jean-jacques-9a7a4a14a",
+  profilePicture: "/profile.png",
   heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Data Engineer passionné, je me spécialise dans la conception et la mise en œuvre de pipelines de données scalables et robustes. Fort d'une expertise technique solide autour des écosystèmes Big Data et Cloud, je construis des architectures données modernes qui transforment la data en un actif stratégique et actionnable. Mon objectif est de résoudre des problématiques métier complexes grâce à des infrastructures performantes, garantissant la fiabilité, l'accessibilité et l'exploitation efficace de la donnée pour une prise de décision éclairée.",
 };
 
 export const workExperience = [
   {
-    company: "Lorem Ipsum Corp",
-    location: "Lorem City",
-    position: "Lorem Engineer",
-    period: "Jan 2020 - Present",
+    company: "QuantCube Technology",
+    location: "Grand Boulevard - Paris",
+    position: "Data Engineer",
+    period: "Avril 2021 - Present",
     achievements: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
+      "Mise en place d’une architecture automatisée pour l’acquisition des données de bateaux via une pipeline ETL sur AWS, utilisant AWS Lambda et SQS.",
+      "Migration des workflows d’indicateurs(EC2) vers AWS avec un déploiement automatisé via une pipeline de CI/CD et terraform.",
+      "Automatisation de l’infrastructure avec Terraform pour un déploiement IaC efficace.",
+      "Mise en place des structures de transfert de données vers les bases de données NoSQL.",
+      "Implémentation des outils de monitoring de l'infrastructure et des services" 
     ],
-  },
-  {
-    company: "Dolor Sit Amet",
-    location: "Ipsumville",
-    position: "Software Developer",
-    period: "Feb 2019 - Jan 2020",
-    achievements: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-    ],
-  },
-  {
-    company: "Consectetur Inc.",
-    location: "Adipiscing, Ipsum",
-    position: "Intern",
-    period: "Jun 2018 - Feb 2019",
-    achievements: [
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-    ],
-  },
+  }
 ];
 
 export const education = [
   {
-    institution: "Lorem Ipsum University",
-    location: "Lorem City",
-    degree: "BSc Lorem Ipsum",
-    period: "2015 - 2019",
+    institution: "Université Paris Saclay, DataScale Gestion de données et Extraction de connaissances à large échelle",
+    location: "Avenue des États Unis - Versailles",
+    degree: "Master",
+    period: "2019 - 2021",
     achievements: [
-      "President of Lorem Ipsum Club",
-      "Organized multiple lorem events",
-      "Represented university in national competitions.",
-      "Graduated with honors.",
+      "Ingénierie des données : conception, administration, sécurisation et optimisation d’architectures multi-échelles (des grands « data centers » aux myriades d'objets connectés).",
+      "Analyse des données : intégration de données hétérogènes, qualité des données, fouille de données et apprentissage automatique pour transformer les données en réelles connaissances."
     ],
   },
 ];
 export const skills = {
-  programmingLanguages: [
-    "LoremLang",
-    "IpsumScript",
-    "DolorLang",
-    "SitLang",
-    "AmetLang",
-    "ConsecteturLang",
+  cloudAndInfrastructure: [
+    "AWS",
+    "ECS", 
+    "ECR", 
+    "EMR",
+    "Lambda", 
+    "S3", 
+    "Athena", 
+    "SQS", 
+    "Secret", 
+    "Terraform"
   ],
-  frontendDevelopment: [
-    "LoremJS",
-    "IpsumJS",
-    "Dolor Native",
-    "Sit UI",
-    "Amet CSS",
-    "HTML",
-    "CSS",
+  containerizationAndOrchestration: [
+    "Docker",
+    "DockerCompose",
+    "Kubernetes"
   ],
-  backendDevelopment: ["LoremNode", "IpsumExpress"],
-  databaseAndStorage: ["LoremDB", "IpsumORM"],
-  cloudAndDevOps: ["LoremCloud"],
-  toolsAndServices: [
-    "LoremAuth",
-    "IpsumCMS",
-    "DolorAnalytics",
-    "SitValidator",
-    "AmetMonitor",
-    "ConsecteturPanel",
-    "AdipiscingTrigger",
+  bigDataAndDataEngineering: [
+    "Hadoop",
+    "Airflow", 
+    "Athena", 
+    "Hive", 
+    "MLflow", 
+    "Cookiecutter", 
+    "Hydra", 
+    "DVC"
+  ],
+  monitoringAndCICD: [
+    "CloudWatch", 
+    "Grafana", 
+    "Bitbucket Pipelines"
+  ],
+  visualisation: [
+    "Streamlit", 
+    "Plotly", 
+    "Matplotlib"
+  ],
+  langageAndFrameworks: [
+    "Python (Pandas)", 
+    "SQL", 
+    "Bash", 
+    "GraphQL", 
+    "FastAPI"
   ],
 };
 
@@ -120,52 +110,15 @@ export const projects = [
 
 export const awards = [
   {
-    name: "Lorem Ipsum Award",
-    issuer: "Lorem Organization",
-    date: "Jan 2020",
+    name: "Certified Cloud Practitioner",
+    issuer: "AWS",
+    date: "Octobre 2022",
     type: "International",
-    position: "First Place",
   },
   {
-    name: "Dolor Sit Amet Prize",
-    issuer: "Ipsum Foundation",
-    date: "Feb 2021",
-    type: "National",
-    position: "Runner-up",
-  },
-  {
-    name: "Consectetur Hackathon",
-    issuer: "Adipiscing Org",
-    date: "Mar 2022",
-    type: "National",
-    position: "Winner",
-  },
-  {
-    name: "Vestibulum Event",
-    issuer: "Vestibulum College",
-    date: "Apr 2022",
-    type: "National",
-    position: "First Prize",
-  },
-  {
-    name: "Curabitur Hackfest",
-    issuer: "Curabitur Institute",
-    date: "May 2022",
-    type: "National",
-    position: "Second Prize",
-  },
-  {
-    name: "Praesent Hacks",
-    issuer: "Praesent Group",
-    date: "Jun 2022",
-    type: "National",
-    position: "Second Runner-up",
-  },
-  {
-    name: "Fusce Hack",
-    issuer: "Fusce Club",
-    date: "Jul 2022",
-    type: "National",
-    position: "Most Impactful Hack",
-  },
+    name: "Kubernetes and Cloud Native Associate (KCNA)",
+    issuer: "Linux Foundation",
+    date: "May 2025",
+    type: "International"
+  }
 ];

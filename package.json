@@ -3,11 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "description": "Modern portfolio template with animations and glassmorphism effects",
-  "author": "Rishikesh S",
+  "author": "OUEDRAOGO Najibe Jean Jacques",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rishikesh2003/my-portfolio"
+    "url": "https://github.com/najibejeanjacques/najibe-portfolio"
   },
   "scripts": {
     "dev": "astro dev",
