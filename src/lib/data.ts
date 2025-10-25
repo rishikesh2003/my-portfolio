@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "OUEDRAOGO Najibe Jean Jacques",
   location: "Saint Cyr l'Ecole 78210",
   email: "najibe252@gmail.com",
-  linkedin: "www.linkedin.com/in/ouedraogo-najibe-jean-jacques-9a7a4a14a",
+  linkedin: "https://www.linkedin.com/in/ouedraogo-najibe-jean-jacques-9a7a4a14a",
   profilePicture: "/profile.png",
   heroDescription:
     "Data Engineer passionné, je me spécialise dans la conception et la mise en œuvre de pipelines de données scalables et robustes. Fort d'une expertise technique solide autour des écosystèmes Big Data et Cloud, je construis des architectures données modernes qui transforment la data en un actif stratégique et actionnable. Mon objectif est de résoudre des problématiques métier complexes grâce à des infrastructures performantes, garantissant la fiabilité, l'accessibilité et l'exploitation efficace de la donnée pour une prise de décision éclairée.",
@@ -38,6 +38,7 @@ export const education = [
 ];
 export const skills = {
   cloudAndInfrastructure: [
+    "G42",
     "AWS",
     "ECS", 
     "ECR", 
@@ -85,25 +86,57 @@ export const skills = {
 
 export const projects = [
   {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
+    title: "Infrastructure Data Multi-Cloud (AWS & G42)",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+      "Infrastructure as Code avec Terraform : VPC, sous-réseaux, bases de données (MySQL) pour dev/preprod/prod.",
+      "Connexion sécurisée entre clouds via VPN site-to-site.",
+      "Déploiement d'instances (EC2 AWS + VMs G42) pour traitement data (ETL).",
+      "Configuration des règles de firewall et des tables de routage pour un accès contrôlé.",
+      "Configuration des rôles IAM et des politiques d’accès.",
+      "Automatisation CI/CD avec validation progressive des environnements."
     ],
   },
   {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
+    title: "Pipeline Data & ML pour Indicateurs Manufacturiers",
     description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "Automatisation du build d'images Docker via CI/CD et stockage dans AWS ECR.",
+      "Déploiement infrastructure as Code avec Terraform (cluster ECS, IAM, networking).",
+      "Gestion centralisée des secrets via AWS Secrets Manager.",
+      "Gestion centralisée des modèles avec MLflow (versioning, metadata)",
+      "Tracking des expériences et métriques ML",
+      "Orchestration des workflows avec Apache Airflow pour le calcul quotidien des indicateurs.",
+      "Mise en place d'alertes Slack.",
+      "Surveillance des performances en temps réel."
+    ],
+  },
+  {
+    title: "Pipeline Data pour Indicateurs Trade Maritime (AIS)",
+    description: [
+      "Script d'acquisition de données AIS via API → file SQS.",
+      "Lambda function pour prétraitement et conversion Parquet avec partitionnement.",
+      "Déploiement automatique de cluster EMR pour le calcul des indicateurs.",
+      "Orchestration complète via Apache Airflow",
+      "Stockage dans le data lake S3 (input/output)"
+    ],
+  },
+  {
+    title: "Portail IT de Monitoring AWS Interne",
+    description: [
+      "Script Python POO pour inventorier les services AWS (IAM, S3, EC2...).",
+      "Tagging des ressources pour le suivi des coûts.",
+      "API GraphQL avec FastAPI pour l'accès aux données.",
+      "Dashboard Grafana pour la visualisation en temps réel.",
+      "Infrastructure as Code avec Terraform (EC2, RDS, Lambda...)",
+      "CI/CD avec tests automatisés"
+    ],
+  },
+  {
+    title: "Pipeline d'Acquisition d'Images Satellitaires Copernicus",
+    description: [
+      "Script Python pour interroger l'API Copernicus et publier sur SQS.",
+      "Déployer une fonction Lambda containerisée (ECR) déclenchée par SQS.",
+      "Stockage des images dans S3.",
+      "Policy S3 pour l'archivage automatique des données."
     ],
   },
 ];
