@@ -11,15 +11,15 @@ export const personalInfo = {
 export const workExperience = [
   {
     company: "QuantCube Technology",
-    location: "Grand Boulevard - Paris",
+    location: "Grands Boulevards - Paris",
     position: "Data Engineer",
     period: "Avril 2021 - Present",
     achievements: [
-      "Mise en place d’une architecture automatisée pour l’acquisition des données de bateaux via une pipeline ETL sur AWS, utilisant AWS Lambda et SQS.",
-      "Migration des workflows d’indicateurs(EC2) vers AWS avec un déploiement automatisé via une pipeline de CI/CD et terraform.",
+      "Mise en place d’une architecture automatisée pour l’acquisition de données maritimes via une pipeline ETL sur AWS, utilisant AWS Lambda et SQS.",
+      "Migration de workflows d’indicateurs(EC2) vers une architecture containeurisée, déployée sur AWS via une pipeline CI/CD et Terraform.",
       "Automatisation de l’infrastructure avec Terraform pour un déploiement IaC efficace.",
-      "Mise en place des structures de transfert de données vers les bases de données NoSQL.",
-      "Implémentation des outils de monitoring de l'infrastructure et des services" 
+      "Mise en place de structures de transfert de données vers les bases de données NoSQL.",
+      "Implémentation d'outils de monitoring d'infrastructure et de services" 
     ],
   }
 ];
@@ -38,7 +38,6 @@ export const education = [
 ];
 export const skills = {
   cloudAndInfrastructure: [
-    "G42",
     "AWS",
     "ECS", 
     "ECR", 
@@ -47,8 +46,9 @@ export const skills = {
     "S3", 
     "Athena", 
     "SQS", 
-    "Secret", 
-    "Terraform"
+    "Secret Manager", 
+    "Terraform",
+    "G42"
   ],
   containerizationAndOrchestration: [
     "Docker",
@@ -88,7 +88,8 @@ export const projects = [
   {
     title: "Infrastructure Data Multi-Cloud (AWS & G42)",
     description: [
-      "Infrastructure as Code avec Terraform : VPC, sous-réseaux, bases de données (MySQL) pour dev/preprod/prod.",
+      "Mise en place complète d’une architecture AWS (VPC, subnets publics/privés, route tables, NAT/IGW, Security Groups, Load Balancer) et déploiement automatisé des environnements dev / preprod / prod.",
+      "Automatisation du déploiement des bases MySQL (instances, schémas, tables) et configuration avancée (Security Groups, subnet groups) pour les environnements dev / preprod / prod.",
       "Connexion sécurisée entre clouds via VPN site-to-site.",
       "Déploiement d'instances (EC2 AWS + VMs G42) pour traitement data (ETL).",
       "Configuration des règles de firewall et des tables de routage pour un accès contrôlé.",
@@ -112,8 +113,8 @@ export const projects = [
   {
     title: "Pipeline Data pour Indicateurs Trade Maritime (AIS)",
     description: [
-      "Script d'acquisition de données AIS via API → file SQS.",
-      "Lambda function pour prétraitement et conversion Parquet avec partitionnement.",
+      "Acquisition de données AIS via API et ingestion dans une file SQS, pour un flux > 25 GB/jour de données brutes, destiné à l’alimentation de pipelines distribués et scalables.",
+      "Déploiement d’une pipeline distribuée sur AWS, basée sur SQS pour l’ingestion et la mise en file des données à grande échelle, et AWS Lambda pour le traitement serverless parallèle, garantissant scalabilité, tolérance aux pannes et exécution en quasi-temps réel.",
       "Déploiement automatique de cluster EMR pour le calcul des indicateurs.",
       "Orchestration complète via Apache Airflow",
       "Stockage dans le data lake S3 (input/output)"
@@ -122,10 +123,10 @@ export const projects = [
   {
     title: "Portail IT de Monitoring AWS Interne",
     description: [
-      "Script Python POO pour inventorier les services AWS (IAM, S3, EC2...).",
+      "Script Python POO pour l’inventaire et le reporting des ressources AWS, incluant IAM, S3, EC2 et autres services clés, pour un suivi automatisé des coûts et une meilleure visibilité sur l’utilisation des ressources cloud.",
       "Tagging des ressources pour le suivi des coûts.",
       "API GraphQL avec FastAPI pour l'accès aux données.",
-      "Dashboard Grafana pour la visualisation en temps réel.",
+      "Dashboard Grafana pour la visualisation en temps réel des ressources existantes et de leurs coûts associés.",
       "Infrastructure as Code avec Terraform (EC2, RDS, Lambda...)",
       "CI/CD avec tests automatisés"
     ],
@@ -133,7 +134,7 @@ export const projects = [
   {
     title: "Pipeline d'Acquisition d'Images Satellitaires Copernicus",
     description: [
-      "Script Python pour interroger l'API Copernicus et publier sur SQS.",
+      "Script Python pour ingestion d’images satellites via l’API Copernicus, utilisant SQS pour la mise en file des requêtes et permettre un traitement distribué, scalable et résilient des téléchargements.",
       "Déployer une fonction Lambda containerisée (ECR) déclenchée par SQS.",
       "Stockage des images dans S3.",
       "Policy S3 pour l'archivage automatique des données."
@@ -152,6 +153,12 @@ export const awards = [
     name: "Kubernetes and Cloud Native Associate (KCNA)",
     issuer: "Linux Foundation",
     date: "May 2025",
+    type: "International"
+  },
+  {
+    name: "AI Agents Course",
+    issuer: "Hugging Face",
+    date: "Oct 2025",
     type: "International"
   }
 ];
