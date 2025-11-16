@@ -1,0 +1,41 @@
+name: build-push-deploy
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::123456789012:role/github-oidc-portfolio
+          aws-region: us-east-1
+
+      - name: Login to Amazon ECR
+        id: ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and push image
+        run: |
+          IMAGE_URI=${{ steps.ecr.outputs.registry }}/portfolio:latest
+          docker build -t $IMAGE_URI .
+          docker push $IMAGE_URI
+          echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
+
+      - name: Terraform apply with new image
+        uses: hashicorp/setup-terraform@v3
+        with: { terraform_version: 1.8.5 }
+      - run: |
+          cd aws
+          terraform init -input=false
+          terraform apply -auto-approve -input=false             -var domain=kylehancock.com             -var fqdn=www.kylehancock.com             -var image=${IMAGE_URI}
