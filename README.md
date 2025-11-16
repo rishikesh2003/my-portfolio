@@ -1,186 +1,129 @@
-# Modern Portfolio Template
+# Kyle Hancock - Portfolio
 
-A sleek, responsive portfolio website built with **Astro**, **React**, and **Tailwind CSS**, featuring modern animations and stunning glassmorphism effects.
+A modern, responsive portfolio website showcasing professional experience, technical skills, and certifications. Built with **Astro**, **React**, and **Tailwind CSS**, featuring elegant glassmorphism effects and smooth animations.
 
-![Portfolio Screenshot](https://github.com/user-attachments/assets/4f2466f1-1ebe-4cbe-857c-40eccd63c384)
+## 🌐 Live Site
+
+👉 **[www.kylehancock.com](https://www.kylehancock.com)**
+
+Alternative URLs:
+- [kylehancock.com](https://kylehancock.com) (redirects to www)
+- [kahancock.github.io/portfolio](https://kahancock.github.io/portfolio) (redirects to custom domain)
 
 ## ✨ Features
 
-- **Modern Design** – Clean, professional layout with elegant glassmorphism
-- **Animations** – Smooth transitions and interactive UI via Framer Motion
-- **Dark/Light Mode** – Automatic theme switching with system preference detection
-- **Fully Responsive** – Optimized for mobile, tablet, and desktop
-- **Blazing Fast** – Powered by Astro for superior performance
-- **Modular Structure** – Built for easy customization and scalability
-- **SEO Friendly** – Structured content and meta tags for better visibility
+- **🌙 Dark Mode Default** – Professional dark theme with light mode toggle
+- **📱 Fully Responsive** – Optimized for mobile, tablet, and desktop
+- **⚡ Blazing Fast** – Powered by Astro for superior performance
+- **🎨 Modern Design** – Clean layout with glassmorphism effects
+- **✨ Smooth Animations** – Interactive UI powered by Framer Motion
+- **🔍 SEO Optimized** – Structured content and meta tags
+- **🎓 License Tracking** – Dedicated section for certifications and licenses
 
-## 🚀 Demo
+## 🏗️ Architecture
 
-👉 [Live Demo](https://rishilol.vercel.app/)
+### Tech Stack
+- **Framework**: Astro 5.x (Static Site Generator)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4.x
+- **Animations**: Framer Motion
+- **Content**: MDX for case studies
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages with GitHub Actions
 
-## 🛠 Getting Started
+### Project Structure
+```
+src/
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   ├── HeroSection.tsx     # Landing section with profile
+│   ├── ExperienceSection.tsx # Professional experience
+│   ├── SkillsSection.tsx   # Technical skills
+│   ├── LicensesSection.tsx # Certifications & licenses
+│   ├── EducationSection.tsx # Academic background
+│   └── Footer.tsx          # Contact information
+├── layouts/
+│   └── Layout.astro        # Base layout with theme system
+├── pages/
+│   ├── index.astro         # Homepage
+├── lib/
+│   └── data.ts            # Content configuration
+└── styles/
+    └── global.css         # Global styles and theme
+```
+
+## 🚀 Local Development
 
 ### Prerequisites
+- Node.js 20+
+- npm
 
-- Node.js (v18+ recommended)
-- npm / yarn / bun
-
-### Installation
-
+### Setup
 ```bash
-git clone https://github.com/yourusername/my-portfolio.git
-cd my-portfolio
+# Clone the repository
+git clone https://github.com/kahancock/portfolio.git
+cd portfolio
 
 # Install dependencies
 npm install
-# or
-yarn install
-# or
-bun install
 
 # Start development server
 npm run dev
-# or
-yarn dev
-# or
-bun dev
 ```
 
-Visit `http://localhost:4321` in your browser to see it in action.
+Visit `http://localhost:4321` to view the site.
 
-## 🧩 Customizing the Portfolio
-
-All your content lives inside `src/lib/data.ts`. Update the following to make it yours:
-
-### 1. Personal Info
-
-```ts
-export const personalInfo = {
-  name: "Your Name",
-  location: "Your Location",
-  email: "your.email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername/",
-};
-```
-
-### 2. Work Experience
-
-```ts
-export const workExperience = [
-  {
-    company: "Company Name",
-    location: "Location",
-    position: "Your Position",
-    period: "Start Date - End Date",
-    achievements: [
-      "Achievement 1",
-      "Achievement 2",
-    ],
-  },
-];
-```
-
-### 3. Education
-
-```ts
-export const education = [
-  {
-    institution: "University Name",
-    location: "Location",
-    degree: "Your Degree",
-    period: "Start Date - End Date",
-    achievements: [
-      "Achievement 1",
-      "Achievement 2",
-    ],
-  },
-];
-```
-
-### 4. Skills
-
-```ts
-export const skills = {
-  programmingLanguages: ["TypeScript", "Python"],
-  frontendDevelopment: ["React", "Next.js"],
-  // and more...
-};
-```
-
-### 5. Projects
-
-```ts
-export const projects = [
-  {
-    title: "Project Name",
-    github: "https://github.com/yourusername/project",
-    description: [
-      "What it does",
-      "Technologies used",
-    ],
-  },
-];
-```
-
-### 6. Awards
-
-```ts
-export const awards = [
-  {
-    name: "Award Name",
-    issuer: "Issuer",
-    date: "Date",
-    type: "Type",
-    position: "Position",
-  },
-];
-```
-
-## 📦 Build for Production
-
+### Build Commands
 ```bash
+# Build for production
 npm run build
-# or
-yarn build
-# or
-bun run build
-```
 
-To preview the production build locally:
-
-```bash
+# Preview production build
 npm run preview
-# or
-yarn preview
 ```
 
-## 📤 Deployment
+## ⚙️ Customization
 
-Easily deploy to platforms like **Vercel**, **Netlify**, **GitHub Pages**, or any static host of your choice.
+All content is managed through `src/lib/data.ts`:
+
+## 🚀 Deployment
+
+The site uses GitHub Actions for automatic deployment to GitHub Pages:
+
+1. **Push to `GH_Pages` branch** triggers deployment
+2. **Custom domain** configured via `public/CNAME`
+3. **HTTPS** managed automatically by GitHub Pages
+4. **DNS** configured with CNAME and A records
+
 
 ## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## ©️ Copyright
-
-© 2025 **Rishikesh S.** All rights reserved.
-
-You’re welcome to use this template for your own portfolio — just update `data.ts` and tweak the design as needed. Please keep attribution to the original author.
-
----
-
-## 🌟 Like it?
-
-If you found this helpful or inspiring, **please consider leaving a star** ⭐ on the repo — it helps others discover it too!
-
----
-
 ## 🙏 Acknowledgments
 
-- [Astro](https://astro.build/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Lucide Icons](https://lucide.dev/)
+**Template Credits:**
+- Original portfolio template by **Rishikesh S** ([rishikesh2003](https://github.com/rishikesh2003))
+- Template repository: [my-portfolio](https://github.com/rishikesh2003/my-portfolio)
+
+**Technologies:**
+- [Astro](https://astro.build/) - Static Site Generator
+- [React](https://reactjs.org/) - UI Library  
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Lucide Icons](https://lucide.dev/) - Icon Library
+- [GitHub Pages](https://pages.github.com/) - Hosting
+
+---
+
+## 📞 Contact
+
+**Kyle Hancock**
+- 🌐 Website: [www.kylehancock.com](https://www.kylehancock.com)
+- 📧 Email: [kyle@kylehancock.com](mailto:kyle@kylehancock.com)
+- 💼 LinkedIn: [kyle-a-hancock](https://www.linkedin.com/in/kyle-a-hancock/)
+- 🐙 GitHub: [kahancock](https://github.com/kahancock)
+
+---
+
+*Built with ❤️ using modern web technologies*
