@@ -7,9 +7,11 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://kahancock.github.io',
+  base: '/portfolio',
+  output: 'static',
   vite: {
       plugins: [tailwindcss()],
   },
-
   integrations: [react(), mdx()]
 });
