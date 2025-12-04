@@ -16,7 +16,7 @@ function SkillTag({ skill, index }: { skill: string; index: number }) {
         delay: 0.05 * index,
       }}
       whileHover={{ scale: 1.05, y: -2 }}
-      className="px-3 py-1 bg-muted/80 backdrop-blur-sm rounded-md text-sm border border-purple-500/10 shadow-sm"
+      className="px-3 py-1 bg-muted/80 backdrop-blur-sm rounded-md text-sm border border-orange-600/10 shadow-sm"
     >
       {skill}
     </motion.div>
