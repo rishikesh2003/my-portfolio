@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-
+import Analytics from "@vercel/analytics/astro";
 interface Props {
   title?: string;
   description?: string;
@@ -34,6 +34,7 @@ const { title = "Rishikesh S - Portfolio", description = "My Portfolio" } =
     >
     </div>
     <slot />
+    <Analytics />
   </body>
 </html>
 

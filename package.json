@@ -21,6 +21,7 @@
     "@tailwindcss/vite": "^4.0.14",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
+    "@vercel/analytics": "^1.6.1",
     "aos": "^2.3.4",
     "astro": "^5.5.3",
     "class-variance-authority": "^0.7.1",
