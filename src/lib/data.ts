@@ -211,15 +211,11 @@ export const skills = {
     "JavaScript",
     "TypeScript",
     "Java",
-    "Kotlin",
-    "Swift",
-    "C/C++",
     "Bash",
     "SQL"
   ],
   frontendDevelopment: [
     "Flutter",
-    "React",
     "Angular",
     "Ionic",
     "HTML",
@@ -270,7 +266,7 @@ export const projects = [
       "Flutter mobile app with BLoC pattern and Clean Architecture",
       "FastAPI backend with PostgreSQL database and Firebase Authentication",
       "RevenueCat subscription management for iOS and Android monetization",
-      "Currently serving 3 commercial businesses and 4 independent professionals in Argentina"
+      // "Currently serving 3 commercial businesses and 4 independent professionals in Argentina"
     ]
   },
   {
