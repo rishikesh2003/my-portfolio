@@ -194,10 +194,10 @@ export const workExperience = [
 
 export const education = [
   {
-    institution: "University Name",
-    location: "Location",
+    institution: "Universidad Católica Nuestra Señora de la Asunción",
+    location: "Asunción-Paraguay",
     degree: "Electronic Engineer",
-    period: "Year - Year",
+    period: "2016",
     achievements: [
       "Undergraduate thesis based on People Counter through video camera images, developed with C++ and OpenCV libraries"
     ]
