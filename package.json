@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Modern portfolio template with animations and glassmorphism effects",
   "author": "Rishikesh S",
   "license": "MIT",
